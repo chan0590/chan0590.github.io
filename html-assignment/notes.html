@@ -12,7 +12,7 @@
     <dl>
         <dt>Soccer</dt>
         <dd>Also known as football in most parts of the world, is the most popular sport globally, played by millions of people of all ages. It is a team sport that involves two teams of eleven players each, who compete to score goals by getting a ball into the opposing team's net. The game is governed by a set of rules known as the Laws of the Game.</dd>
-        <p></p>
+        
         <dt>Ping Pong</dt>
         <dd>Also known as table tennis, is a fast-paced and popular indoor sport played by two or four players. Originating in England in the early 20th century, it is now a globally recognized game, both as a recreational activity and a competitive sport.</dd>
     </dl>
@@ -41,5 +41,38 @@
             </tr>
         </tbody>
     </table>
+    <section>
+        <h3>Supporting a soccer team through voting</h3>
+        <form action="notes.html" method="GET">
+            <div>
+                <label for="Name">Name</label>
+                <input id="Name" Name="lname" type="text" required>
+            </div>
+            <div>
+                <label for="soccer-team">What is your favourite soccer team?</label>
+                <select id="soccer-team" name="fst">
+                    <option value="che">Chelsea</option>
+                    <option value="mc">Man City</option>
+                    <option value="lp">Liverpool</option>
+                </select>
+            </div>
+            <div>
+                <label for="ping-pong-player">What is your favourite ping pong player?</label>
+                <select id="ping-pong-player" name="fppp">
+                    <option value="wc">Wang Chuqin (CHN)</option>
+                    <option value="fl">Felix Lebrun (FRA)</option>
+                    <option value="hc">Hugo Calderano (BRA)</option>
+                </select>
+            </div>
+            <div>
+                <label for="others">Other team/player?</label>
+                <textarea id="others" name="q"></textarea>
+            </div>
+            <div>
+                <button type="submit">Vote</button>
+            </div>
+        </form>
+    </section>
+    <p><a href="index.html">Back to home page</a></p>
 </body>
 </html>

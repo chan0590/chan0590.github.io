@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* change font family */
+    font-size: 18px; /* increase font size*/
+
+    header, footer {
+        background-color: #FF8300; /* Set background color */
+    }
+
+    .site-title {
+        color: white; /* Set text color */
+    }
+
+    #my-image {
+        box-shadow: 0 0 2px 1px black; /* Add box-shadow */
+    }
+
+    ul {
+        list-style-type: square; /* Apply square bullets to the list */
+    }
+
+    #Hobbies li:nth-child(odd) {
+        background-color: #F0E995; /* Apply background color to odd list items */
+    }
+
+    nav ul {
+        list-style-type: none; /* Remove the bullet from the unordered list in navigation */
+        padding: 0;
+    }
+
+    nav a, article a {
+        text-decoration: none; /* Remove the underline from the links */
+        color: inherit;
+    }
+
+    nav a, article a {
+        background-color: #99FF99; /* Add background color to the link */
+        border: 1px solid red; /* Add border to the link */
+    }
+
+    nav a:hover,
+    nav a:focus,
+    article a:hover,
+    article a:focus {
+        background-color: yellow; /* Change background color on hover in navigation and article */
+    }
+}

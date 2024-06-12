@@ -28,12 +28,12 @@ body {
         padding: 0;
     }
 
-    nav a, article a {
+    nav a, article a, p a {
         text-decoration: none; /* Remove the underline from the links */
         color: inherit;
     }
 
-    nav a, article a {
+    nav a, article a, p a {
         background-color: #99FF99; /* Add background color to the link */
         border: 1px solid red; /* Add border to the link */
     }
@@ -41,6 +41,8 @@ body {
     nav a:hover,
     nav a:focus,
     article a:hover,
-    article a:focus {
+    article a:focus,
+    p a:hover,
+    p a:focus {
         background-color: yellow; /* Change background color on hover in navigation and article */
     }

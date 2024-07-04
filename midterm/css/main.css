@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Style the wrapper and box */
 .wrapper {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +24,7 @@
     top: -3px;
 }
 
+/* Style the header including image and heading */
 header {
     position: relative;
     text-align: center;
@@ -42,6 +44,7 @@ header h1 {
     margin: 0 auto;
 }
 
+/* Style the navigation */
 nav {
     text-align: center;
     padding: 0;
@@ -88,6 +91,7 @@ nav ul li a {
     display: block;
 }
 
+/* Style the article inclduing image and content */
 article h2 {
     font-size: 1.6em;
     padding-top: 25px;
@@ -110,6 +114,7 @@ section h3 {
     padding-bottom: 10px;
 }
 
+/* Style the form */
 section ul li {
     margin: 0 20px;
 }
@@ -153,10 +158,12 @@ section form {
     margin-right: 0.5rem;
 }
 
+/* Style the button */
 button {
     padding: 10px;
 }
 
+/* Style the footer */
 footer {
     margin: 15px;
     padding-top: 10px;

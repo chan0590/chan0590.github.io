@@ -1,10 +1,451 @@
+/* CSS reset, to ensure the webpage starts with a consistent baseline across different browers */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Use google font "Open Sans" for the whole webpage */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Open Sans;
+}
+
+/* Fix the maximum width of the webpage to 1200px */
+/* .wrapper {
+    max-width: 1200px;
+} */
+
+/* Styling MOBILE */
+/* Styling the header backgrond colour and space around */
+.header-nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+/* Styling the logo background colour, matching the logo base color */
+.logo {
+    background-color: #c78c06;
+}
+
+/* Styling the unordered list, position */
+.header-nav ul {
+    list-style-type: none;
+    line-height: 50px;
+    text-align: center;
+}
+
+.header-nav nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #c78c06;
+    padding: 10px;
+}
+
+.header-nav nav ul li a:hover {
+    color: #222;
+    background-color: #c78c06;
+}
+
+form {
+    display: flex;
+}
+
+.search-input {
+    font-size: 12px;
+    height: 30px;
+    vertical-align: middle;
+    width: 100%;
+    border: none;
+}
+
+.search-input::placeholder {
+    padding-left: 0.3rem;
+}
+
+.search-button {
+    color: #c78c06;
+    background: #222;
+    border: 1px solid #c78c06;
+    width: 30px;
+    height: 30px;
+}
+
+.main-banner {
+    background: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    /* padding: 0px;
+    margin: 0px; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: rgba(2, 2, 2, 0.5);
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.connect-button {
+    font-family: Open Sans;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: #c78c06;
+    color: #222;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    border: none;
+}
+
+.connect-button i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.about-us {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us article h2 {
+    font-size: 2rem;
+    line-height: 80px;
+}
+
+.about-us p {
+    font-size: 0.8rem;
+    line-height: 23px;
+}
+
+.about-us article {
+    margin-bottom: 10px;
+}
+
+.services {
+    padding: 1rem;
+}
+
+.services h2 {
+    font-size: 2rem;
+    line-height: 70px;
+}
+
+.digital, .marketing, .video, .web, .print {
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+}
+
+.services-content img {
+    width: 100%;    
+}
+
+.digital h3, .marketing h3, .video h3, .web h3, .print h3 {
+    line-height: 40px;
+    padding-top: 10px;
+    padding-left: 1rem;
+}
+
+.digital p, .marketing p, .video p, .web p, .print p {
+    padding: 10px;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+.digital-button, .marketing-button, .video-button, .web-button, .print-button {
+    text-decoration: none;
+    font-size: 0.8rem;
+    background-color: #222;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 60px;
+    border: none;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.digital-button i, .marketing-button i, .video-button i, .web-button i, .print-button i {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.vision {
+    background: url("../images/vision.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-content h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 50px;
+    margin-left: 1rem;
+}
+
+.vision-content p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.learn-more-button {
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: #222;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.learn-more-button i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.team {
+    padding: 1rem;
+}
+
+.team h2 {
+    font-size: 2rem;
+    line-height: 70px;
+}
+
+.john, .bob {
+    background-color: #ffe6ac;
+    margin-bottom: 10px;
+}
+
+.team-content img {
+    width: 100%;
+}
+
+.team h3 {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.team h4 {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+.team p {
+    font-size: 0.8rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1rem;
+}
+
+.line {
+    border: 1px solid #c78c06;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.contact-content {
+    padding: 1rem;
+}
+
+.contact-content h2 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+.contact-content h3 {
+    line-height: 3rem;
+}
+
+.contact-content form {
+    font-size: 0.7rem;
+}
+
+.message form {
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 1.5rem;
+}
+
+.message form textarea {
+    height: 150px;
+}
+
+.message form input[type="submit"] {
+    background-color: #222;
+    color: #c78c06;
+    border: none;
+    width: 50px;
+    height: 30px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.hours h3 {
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.hours table {
+    width: 100%;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+
+.hours th, td {
+    border: 0.5px solid #222;
+    padding: 15px 15px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.hours th {
+    background-color: #ffe6ac;
+}
+
+.location h3 {
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.location iframe {
+    width: 100%;
+    height: 500px;
 }
 
 .footer-wrapper {
-    border: solid red;
-    width: auto;
+    background-color: #222;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
 }
+
+.footer-wrapper p {
+    color: #c78c06;
+    font-size: 0.6rem;
+    margin-left: 1rem;
+}
+
+.footer-wrapper a {
+    color: #c78c06;    
+}
+
+@media screen and (min-width: 760px) {
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header-nav nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav nav li {
+        margin: 0 60px;
+    }
+
+    .header-nav nav a:hover {
+        width: 100%;
+    }
+
+    .logo {
+        background-color: transparent;
+    }
+
+    .hero-content {
+        width: 85%;
+        height: 70%;
+    }
+
+    .about-image {
+        margin-left: 4rem;
+        margin-right: 10px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .about-us-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-us-content article {
+        width: 50%;
+        height: 50%;
+        margin-right: 4rem;
+    }
+
+    .services-content {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .services-content h2 {
+        grid-column: 1 / 6;
+        grid-row: 1;
+    }
+
+    .video {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .web {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+}
+
+
+
+
+
 
 

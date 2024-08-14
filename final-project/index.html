@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chan0590 Final Project</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- Links for the google font 'Open Sans' for the webpage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link for the search button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <!-- wrapper for the whole webpage -->
     <div class="wrapper">
         <!-- wrapper for main section includes header, banner and hero background & texts -->
         <div class="main-wrapper">
-
             <!-- HEADER section includes logo, navigation, search bar and search button -->
             <header>
                 <div class="header-nav">
@@ -31,30 +35,25 @@
                         </ul>
                     </nav>
 
-                    <div class="search-bar"> <!-- search bar -->
-                        <input type="text" placeholder="Search">
-
-                        <button class="search-button"> <!-- search button -->
-                            <i class="material-symbols-outlined">search</i>
-                        </button>
+                    <div class="search"> <!-- search -->
+                        <form action="index.html" method="get">
+                            <input class="search-input" type="text" placeholder="Search">
+                            <button class="search-button" type="submit"> <!-- search button -->
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
                     </div>
 
                 </div>
             </header>
 
-            <!-- MAIN section includes banner image and hero background & texts & button -->
+            <!-- MAIN section includes banner and hero background & texts & button -->
             <div class="main-banner">
-
-                <div class="banner-image"> <!-- banner image -->
-                    <img src="images/main-banner.jpg" alt="Main Banner">
-                </div>
-
                 <div class="hero-content"> <!-- hero background & texts & button -->
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic magnam libero cupiditate alias similique cumque, eum animi omnis eveniet ex veniam rerum illum sed? Distinctio deleniti vel illo quae unde!</p>
-                    <button class="connect-button">Connect with us</button>
-                </div>
-                
+                    <a href="#contact" class="connect-button">Connect with us<i class="fa-solid fa-caret-right"></i></a>
+\                </div>
             </div>
         </div>
 
@@ -71,7 +70,8 @@
 
                     <article> <!-- heading and contents -->
                         <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur velit aspernatur eaque eius adipisci, delectus ipsa expedita optio, ducimus possimus magni quaerat nulla quisquam magnam accusantium, perferendis ad tempore cumque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, incidunt ut harum nulla totam labore numquam obcaecati praesentium. Illum quibusdam facere, numquam aperiam eius iusto ipsum reprehenderit voluptate et nemo.
+                        Consequatur excepturi nemo at ipsa. Quidem minus dignissimos sunt et autem officiis exercitationem esse. Suscipit praesentium excepturi, impedit aut natus ad, ratione qui assumenda aliquid velit quaerat, repudiandae laboriosam. Nostrum?</p>
                     </article>
 
                 </div>
@@ -88,7 +88,7 @@
                         <img src="images/digital.jpg" alt="Digital Transformation">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque earum laborum magni minima ipsam! Officia nesciunt assumenda libero in, amet voluptatum deserunt at distinctio ad alias aliquam et minus accusamus.</p>
-                        <button class="digital-button">Digital Plans</button>
+                        <a href="#" class="digital-button">Digital Plans<i class="fa-solid fa-caret-right"></i></a>
                     </section>
 
                     <!-- Marketing service section includes image, heading, content and button -->
@@ -96,7 +96,7 @@
                         <img src="images/marketing.jpg" alt="Marketing">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur id sapiente ut quibusdam veritatis iusto, quis aliquid eaque quo! Dolore a tempora dignissimos laudantium illo et omnis soluta vel quaerat.</p>
-                        <button class="marketing-button">Marketing Plans</button>
+                        <a href="#" class="marketing-button">Marketing Plans<i class="fa-solid fa-caret-right"></i></a>
                     </section>
 
                     <!-- Video Production service section includes image, heading, content and button -->
@@ -104,7 +104,7 @@
                         <img src="images/video.jpg" alt="Video Production">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae adipisci eaque aut id repellat iure quas, cumque totam similique explicabo facilis, soluta aperiam. Nam cumque provident necessitatibus reprehenderit modi neque.</p>
-                        <button class="video-button">Video Plans</button>
+                        <a href="#" class="video-button">Video Plans<i class="fa-solid fa-caret-right"></i></a>
                     </section>
 
                     <!-- Web Development service section includes image, heading, content and button -->
@@ -112,7 +112,7 @@
                         <img src="images/web.jpg" alt="Web Development">
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae alias nobis ab. Est perferendis alias distinctio obcaecati officiis ad vitae in voluptatibus nobis, impedit dolorum perspiciatis quasi totam quam inventore.</p>
-                        <button class="web-button">Web Plans</button>
+                        <a href="#" class="web-button">Web Plans<i class="fa-solid fa-caret-right"></i></a>
                     </section>
 
                     <!-- Print service section includes image, heading, content and button -->
@@ -120,7 +120,7 @@
                         <img src="images/print.jpg" alt="Print">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero commodi, amet ipsum expedita nihil labore temporibus nemo ipsa nostrum obcaecati error, dignissimos eligendi, placeat optio recusandae natus sunt incidunt sapiente.</p>
-                        <button class="print-button">Print Plans</button>
+                        <a href="#" class="print-button">Print Plans<i class="fa-solid fa-caret-right"></i></a>
                     </section>
 
                 </div>
@@ -129,14 +129,11 @@
             <!-- OUR VISION section includes image, heading, content and button -->
             <div class="vision">
 
-                <div class="vision-image"> <!-- image -->
-                    <img src="images/vision.jpg" alt="Our Vision">
-                </div>
-
                 <div class="vision-content"> <!-- heading, content and Learn More button -->
-                    <h4>Our Vision</h4>
+                    <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eius porro veniam velit perferendis rerum. Accusamus ex in odit voluptas debitis consectetur nam, explicabo aperiam dolor modi vero. Reiciendis, accusamus?</p>
-                    <button class="learn-more-button">Learn More</button>
+                    <!-- <button class="learn-more-button">Learn More</button> -->
+                    <a href="#" class="learn-more-button">Learn More<i class="fa-solid fa-caret-right"></i></a>
                 </div>
 
             </div>
@@ -151,6 +148,7 @@
                         <img src="images/john.jpg" alt="John Doe">
                         <h3>John Doe</h3>
                         <h4>CEO and Co-owner</h4>
+                        <hr class="line">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla magni omnis culpa dolor deleniti odio optio delectus, quo nesciunt obcaecati libero fugit qui ipsa vero illo doloremque aspernatur corporis dignissimos.</p>
                     </section>
 
@@ -158,6 +156,7 @@
                         <img src="images/bob.jpg" alt="Bob Rite">
                         <h3>Bob Rite</h3>
                         <h4>CFO and Co-owner</h4>
+                        <hr class="line">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus esse harum sed dolorum architecto dolores consectetur soluta quia distinctio at quam odio dolore voluptatibus exercitationem, enim sunt totam beatae.</p>
                     </section>
 
@@ -189,12 +188,6 @@
                         </form>
                     </section>
 
-                    <!-- map section includes sub-heading and map -->
-                    <section class="location">
-                        <h3>Location</h3> <!-- sub-heading -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0188639875055!2d-75.76042877370718!3d45.348431471072296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1722438211787!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- map shows location -->
-                    </section>
-
                     <!-- operation timetable section includes sub-heading and timetable -->
                     <section class="hours">
 
@@ -216,6 +209,13 @@
                         </table>
             
                     </section>
+
+                    <!-- map section includes sub-heading and map -->
+                    <section class="location">
+                        <h3>Location</h3> <!-- sub-heading -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0188639875055!2d-75.76042877370718!3d45.348431471072296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1722438211787!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- map shows location -->
+                    </section>
+
                 </div>
             </div>
         </div>
